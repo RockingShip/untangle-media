@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!--
+   *  This file is part of Untangle, Essence of information in fractal structures.
+   *  Copyright (C) 2017-2020, xyzzy@rockingship.org
+   *
+   *  This program is free software: you can redistribute it and/or modify
+   *  it under the terms of the GNU Affero General Public License as published
+   *  by the Free Software Foundation, either version 3 of the License, or
+   *  (at your option) any later version.
+   *
+   *  This program is distributed in the hope that it will be useful,
+   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   *  GNU Affero General Public License for more details.
+   *
+   *  You should have received a copy of the GNU Affero General Public License
+   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+  <title>untangle - shrimp</title>
+  <meta property="og:title" content="untangle">
+  <meta name="description" content="Extract essence of information and store in fractal structures">
+  <meta property="og:description" content="Extract essence of information and store in fractal structures">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="shortcut icon" type="image/png" sizes="152x152" href="assets/favicon-152.png">
+  <link rel="shortcut icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="assets/favicon-152.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <meta property="og:url" content="https://rockingship.github.io/smile-media/index.html">
+  <meta property="og:image" content="https://rockingship.github.io/untangle-media/assets/favimage-472x472.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:title" content="untangle - shrimp - Extract essence of information and store in fractal structures"/>
+  <meta property="twitter:image" content="https://rockingship.github.io/untangle-media/assets/favimage-472x472.jpg"/>
+
+
+  <style> body { margin: 0; } </style>
+  <script src="3d-force-graph-1.45.3.min.js"></script>
+</head>
+
+<body>
+
+<div id="3d-graph"></div>
+
+<script>
+  const elem = document.getElementById('3d-graph');
+
+  const Graph = ForceGraph3D()(elem)
+          .jsonUrl('shrimp.json')
+          .backgroundColor('#ffffff')
+          .linkColor(link => link.color ? link.color : '#555' )
+          .linkDirectionalArrowLength(3.5)
+          .linkDirectionalArrowRelPos(1)
+          .linkCurvature(0.25)
+          .nodeRelSize(3)
+          .nodeVal('size')
+          .nodeAutoColorBy('user')
+          .nodeLabel(node => `${node.user}: ${node.description}`)
+          .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null);
+</script>
+</body>
+</html>
