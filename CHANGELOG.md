@@ -10,6 +10,7 @@ Media repositories have no releases due to their size.
 ## Unreleased
 
 ```
+2021-03-22 22:46:41 Changed: item order in navbar.
 2021-03-21 23:20:44 Added: `shrimp`.
 2021-03-21 23:16:53 Added: `moonwalk` theme.
 2021-03-21 23:12:16 Initial commit.

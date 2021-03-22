@@ -2,24 +2,18 @@ navbar_entries:
   - title: "showcase"
     url: https://rockingship.github.io
 
-  - title: "RockingShip@github"
-    url: https://github.com/RockingShip
+  - title: "untangle"
+    url: https://rockingship.github.io/untangle/README.html
 
   - title: "untangle-media@github"
     url: https://github.com/RockingShip/untangle-media
-
-  - title: "README@untangle"
-    url: https://rockingship.github.io/untangle/README.html
 
 footer_entries:
   - title: "showcase"
     url: https://rockingship.github.io
 
-  - title: "RockingShip@github"
-    url: https://github.com/RockingShip
+  - title: "untangle"
+    url: https://rockingship.github.io/untangle/README.html
 
   - title: "untangle-media@github"
     url: https://github.com/RockingShip/untangle-media
-
-  - title: "README@untangle"
-    url: https://rockingship.github.io/untangle/README.html
